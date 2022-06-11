@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LoginForm extends StatelessWidget {
+class TextFieldPage extends StatelessWidget {
   final String text;
-  final IconData icon;
   final bool obscureText;
-  const LoginForm({
+  const TextFieldPage({
     Key? key,
     required this.text,
-    required this.icon,
     required this.obscureText,
   }) : super(key: key);
 
@@ -29,10 +27,6 @@ class LoginForm extends StatelessWidget {
             hintText: text,
             hintStyle: const TextStyle(color: Colors.grey),
             border: InputBorder.none,
-            icon: Icon(
-              icon,
-              color: Colors.grey,
-            ),
           ),
         ),
       ),

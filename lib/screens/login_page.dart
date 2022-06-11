@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_ordering_app/widgets/login_form.dart';
 import 'package:food_ordering_app/widgets/login_signup_button.dart';
+import 'package:food_ordering_app/widgets/text_filed.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -35,15 +35,13 @@ class LoginPage extends StatelessWidget {
                     color: Colors.grey[600],
                   ),
                 ),
-                const LoginForm(
+                const TextFieldPage(
                   obscureText: false,
                   text: "Username",
-                  icon: Icons.account_circle_outlined,
                 ),
-                const LoginForm(
+                const TextFieldPage(
                   obscureText: true,
                   text: "Passward",
-                  icon: Icons.lock,
                 ),
                 const Text("Forget Passward?"),
                 const LoginSignupButton(

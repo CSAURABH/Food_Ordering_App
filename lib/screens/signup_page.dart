@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_ordering_app/widgets/login_signup_button.dart';
-
-import '../widgets/signup_form.dart';
+import 'package:food_ordering_app/widgets/text_filed.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -21,20 +20,20 @@ class SignUpPage extends StatelessWidget {
                 color: Colors.grey[600],
               ),
             ),
-            const SignUpForm(
-              obscreText: false,
+            const TextFieldPage(
+              obscureText: false,
               text: "Name",
             ),
-            const SignUpForm(
-              obscreText: false,
+            const TextFieldPage(
+              obscureText: false,
               text: "Username",
             ),
-            const SignUpForm(
-              obscreText: true,
+            const TextFieldPage(
+              obscureText: true,
               text: "Passward",
             ),
-            const SignUpForm(
-              obscreText: true,
+            const TextFieldPage(
+              obscureText: true,
               text: "Confirm Passward",
             ),
             const LoginSignupButton(
